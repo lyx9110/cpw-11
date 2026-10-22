@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oficina</title>
+</head>
+<body>
+  <header>
+    <h1>Atividades do clube</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="oficina.html">Oficinas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+<H2> formulario de inscrição</H2>
+<form action="processar_inscricao.php" method="post">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" required><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+  <label for="oficina">Escolha a oficina:</label>
+  <select id="oficina" name="oficina" required>
+    <option value="">Selecione uma oficina</option>
+    <option value="desenvolvimento_web">Oficina de Desenvolvimento Web</option>
+    <option value="jogos_interativos">Oficina de Jogos Interativos</option>
+  </select><br>
+  <input type="submit" value="Inscrever-se">
+  </form>
+
+
+  </main>
+
+  <footer>
+    <p>Clube de Tecnologia · Projeto escolar de CPW</p>
+  </footer>
+</body>
+</html>
