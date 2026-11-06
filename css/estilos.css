@@ -1,5 +1,4 @@
-body 
-{
+body {
     background-color: #f4f6f9;
     color: #333333;
     font-family: Arial, sans-serif;
@@ -8,8 +7,7 @@ body
     line-height: 1.6;
 }
 
-h1 
-{
+h1 {
     color: #1a4d8c;
     text-align: center;
     border-bottom: 2px solid #1a4d8c;
@@ -17,33 +15,32 @@ h1
     margin-bottom: 20px;
 }
 
-h2 
-{
+h2 {
     color: #2c3e50;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
-p, ul, ol, figure {
+p,
+ul,
+ol,
+figure {
     margin-top: 0;
     margin-bottom: 16px;
 }
 
-a 
-{
+a {
     color: #d9534f;
     text-decoration: none;
     font-weight: bold;
 }
 
-a:hover 
-{
+a:hover {
     color: #b52b27;
     text-decoration: underline;
 }
 
-.lista-atividades 
-{
+.lista-atividades {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
@@ -79,8 +76,7 @@ a:hover
     margin: 0;
 }
 
-.cartao 
-{
+.cartao {
     background: #eef4fa;
     padding: 20px;
     border: 2px solid #215a89;
@@ -89,8 +85,42 @@ a:hover
     flex: 1 1 220px;
 }
 
-.destaque 
-{
+.destaque {
     background: #fff0cf;
     border-color: #8a5a00;
+}
+
+.sessao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.sessao-info,
+.sessao-material {
+    min-width: 0;
+    overflow: hidden;
+    padding: 16px;
+    border: 1px solid #789;
+    background: #edf4fa;
+}
+
+.sessao-info {
+    flex: 2 1 200px;
+}
+
+.sessao-material {
+    flex: 1 1 200px;
+}
+
+@media (max-width: 700px) {
+  .sessao {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sessao-info,
+  .sessao-material {
+    flex-basis: auto;
+  }
 }
